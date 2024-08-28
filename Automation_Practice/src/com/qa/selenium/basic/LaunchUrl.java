@@ -11,6 +11,12 @@ public class LaunchUrl {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get(appURL);
+        String Titel = driver.getTitle();
+
+        System.out.println("The title of application is:"+Titel);  //The title of application is : xyz
+        System.out.println("The URL of application is:"+appURL); // The URL of the target application is : "xyz.com"
+
+
 
 
     }
